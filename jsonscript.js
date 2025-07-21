@@ -4,7 +4,7 @@ const baseURL = "https://api.memobase.ch/record/soz-016-Sozarch_Vid_V_";
 // Predefined custom titles for missing files
 const customTitles = {
     38: "Custom Title for File 38",
-    83: "Custom Title for File 83"
+    34: "Custom Title for File 34"
 };
 
 // Function to fetch data from a single JSON file
@@ -36,8 +36,8 @@ async function fetchAllTitles() {
         } else if (i === 40) {
             // Add 40-1, 40-2
             fileNumbers.push("040-1", "040-2");
-        } else if (i === 38 || i === 83) {
-            // Skip 38 and 83, as they are missing (handled separately)
+        } else if (i === 38 || i === 34) {
+            // Skip 38 and 34, as they are missing (handled separately)
             continue;
         } else {
             // Add regular file numbers (padded with zeros)
