@@ -58,7 +58,7 @@ async function fetchAllTitles() {
         }
     });
 
-    // Add predefined custom titles for missing files (38 and 83)
+    // Add predefined custom titles for missing files
     for (const [fileNumber, title] of Object.entries(customTitles)) {
         const listItem = document.createElement('li');
         listItem.textContent = `File ${fileNumber}: ${title} (Custom Title)`;
